@@ -1,7 +1,5 @@
 # 🚀 DevOps Learning Journey – Day 1
 
-## 📅 Date: 24/03/2026
-
 ## 📚 Topic:  Linux Basics
 
 ## 🧠 What I Learned:
