@@ -1,0 +1,177 @@
+🚀 Day 04 — Linux Package Management & System Monitoring
+
+Today we will learn how Linux systems install software, monitor resources, and check system information — essential skills for every DevOps Engineer.
+
+📦 What is Package Management?
+
+Package management helps install, update, remove, and manage software in Linux.
+
+Instead of downloading .exe files like Windows, Linux uses package managers.
+
+🐧 Common Linux Package Managers
+Distribution	Package Manager
+Ubuntu / Debian	apt
+CentOS / RHEL	yum / dnf
+📥 1. apt — Package Manager (Ubuntu/Debian)
+📌 Definition
+
+apt is used to:
+
+Install software
+Update packages
+Remove packages
+🔄 Update Package List
+sudo apt update
+
+📡 Downloads latest package information.
+
+⬆️ Upgrade Installed Packages
+sudo apt upgrade
+
+📦 Updates installed software.
+
+📥 Install Package
+Example — Install Nginx
+sudo apt install nginx
+❌ Remove Package
+sudo apt remove nginx
+🔍 Search Package
+apt search docker
+🐧 2. yum — Package Manager (CentOS/RHEL)
+📌 Definition
+
+yum manages software packages in RedHat-based systems.
+
+📥 Install Package
+sudo yum install nginx
+🔄 Update Packages
+sudo yum update
+❌ Remove Package
+sudo yum remove nginx
+💽 3. df — Disk Space Usage
+📌 Definition
+
+Displays filesystem disk usage.
+
+🛠️ Syntax
+df -h
+
+📖 -h = human-readable format
+
+✅ Example Output
+Filesystem      Size  Used Avail Use%
+/dev/sda1        50G   20G   28G  42%
+📂 4. du — Directory Size
+📌 Definition
+
+Shows file and directory size.
+
+🛠️ Syntax
+du -sh folder-name
+✅ Example
+du -sh logs
+
+Output:
+
+120M logs
+🧠 5. free — Memory Usage
+📌 Definition
+
+Displays RAM and swap memory usage.
+
+🛠️ Syntax
+free -h
+✅ Example Output
+Mem:   2.0Gi  1.2Gi  500Mi
+⚡ 6. top — System Monitoring
+📌 Definition
+
+Displays running processes and system usage in real time.
+
+Shows:
+
+CPU usage
+RAM usage
+Running processes
+🛠️ Syntax
+top
+🔴 Exit Top
+
+Press:
+
+q
+🖥️ 7. uname — System Information
+📌 Definition
+
+Displays Linux system information.
+
+🛠️ Syntax
+uname -a
+✅ Example Output
+Linux ubuntu 5.15.0 x86_64 GNU/Linux
+🌐 8. hostname — System Hostname
+📌 Definition
+
+Displays system hostname.
+
+🛠️ Syntax
+hostname
+✅ Example
+ubuntu-server
+🧪 Hands-On Practice
+
+Run these commands:
+
+df -h
+
+free -h
+
+uname -a
+
+hostname
+
+top
+📦 Real DevOps Scenario
+Install Nginx Web Server
+Step 1️⃣ Update Packages
+sudo apt update
+Step 2️⃣ Install Nginx
+sudo apt install nginx
+Step 3️⃣ Verify Service
+systemctl status nginx
+Step 4️⃣ Check Server IP
+hostname -I
+🔥 Why This Matters in DevOps
+
+DevOps Engineers constantly monitor:
+
+💽 Disk usage
+🧠 Memory usage
+⚡ CPU load
+📦 Installed software
+🌐 Server details
+
+These commands are used daily in:
+
+AWS EC2
+Docker containers
+Kubernetes nodes
+Production servers
+🎯 Important Commands Summary
+Command	Purpose
+apt	Manage packages
+yum	Manage packages (RHEL)
+df -h	Disk usage
+du -sh	Directory size
+free -h	Memory usage
+top	Live system monitoring
+uname -a	System info
+hostname	System name
+
+💡 Key Learnings
+
+✅ Linux package managers install software
+✅ df checks storage usage
+✅ free checks memory usage
+✅ top monitors live processes
+✅ System monitoring is critical in DevOps

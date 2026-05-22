@@ -1,0 +1,204 @@
+⚙️ Day 07 — Linux Process & Service Management
+
+Every application running in Linux is called a process.
+DevOps Engineers constantly monitor, manage, stop, and restart processes & services on servers.
+
+📌 What is a Process?
+
+A process is a running instance of a program.
+
+Examples:
+
+🌐 Nginx Web Server
+🐳 Docker
+☸️ Kubernetes services
+🗄️ Databases
+📦 Background applications
+
+
+🔍 1. ps — Process Status
+📌 Definition
+
+Displays currently running processes.
+
+🛠️ Syntax
+ps
+
+✅ Example Output
+PID TTY          TIME CMD
+1200 pts/0    00:00:00 bash
+
+
+🔥 Commonly Used Option
+
+ps aux
+
+📖 Meaning
+| Option | Purpose              |
+| ------ | -------------------- |
+| `a`    | All users processes  |
+| `u`    | User-oriented format |
+| `x`    | Background processes |
+
+✅ Example Output
+root      1023  nginx
+ubuntu    2045  python
+
+
+⚡ 2. top — Real-Time Process Monitoring
+📌 Definition
+
+Displays:
+
+CPU usage
+Memory usage
+Running processes
+System load
+
+in real-time.
+
+🛠️ Syntax
+top
+
+🔴 Exit Top
+
+Press:
+q
+
+
+💀 3. kill — Stop a Process
+📌 Definition
+
+Terminates a process using PID (Process ID).
+
+🛠️ Syntax
+kill PID
+
+✅ Example
+kill 2045
+
+🔍 Find Process PID
+ps aux
+
+🚨 Force Kill Process
+kill -9 PID
+
+⚠️ Forcefully stops process immediately.
+
+🔥 4. pkill — Kill by Process Name
+📌 Definition
+
+Kills process using process name.
+
+🛠️ Syntax
+pkill process_name
+
+✅ Example
+pkill nginx
+
+🖥️ 5. systemctl — Service Management
+📌 Definition
+
+Used to manage system services.
+
+Very important in modern Linux systems.
+
+🛠️ Common Commands
+
+▶️ Start Service
+sudo systemctl start nginx
+
+⏹️ Stop Service
+sudo systemctl stop nginx
+
+🔄 Restart Service
+sudo systemctl restart nginx
+
+📊 Check Service Status
+sudo systemctl status nginx
+
+🚀 Enable Service at Boot
+sudo systemctl enable nginx
+
+❌ Disable Service
+sudo systemctl disable nginx
+
+
+🧰 6. service — Legacy Service Management
+📌 Definition
+
+Older command for managing services.
+
+Still used in some systems.
+
+🛠️ Syntax
+sudo service nginx status
+
+✅ Example
+sudo service nginx restart
+
+
+🧪 Hands-On Practice
+
+Run these commands:
+
+ps aux
+
+top
+
+sudo systemctl status nginx
+
+
+📂 Real DevOps Scenario
+
+Install Nginx
+sudo apt install nginx
+
+▶️ Start Nginx
+sudo systemctl start nginx
+
+📊 Check Status
+sudo systemctl status nginx
+
+🌐 Verify Running Service
+ss -tulnp
+
+Look for:
+
+:80
+
+✅ Means web server is running successfully.
+
+🔄 Restart Web Server
+sudo systemctl restart nginx
+
+
+💡 Why Process Management Matters?
+
+DevOps Engineers frequently:
+
+🔍 Monitor applications
+🛠️ Restart failed services
+🚨 Kill stuck processes
+📊 Analyze server load
+⚙️ Manage production services
+
+🎯 Important Commands Summary
+| Command     | Purpose                   |
+| ----------- | ------------------------- |
+| `ps`        | Show processes            |
+| `ps aux`    | Detailed process list     |
+| `top`       | Live monitoring           |
+| `kill`      | Stop process using PID    |
+| `pkill`     | Stop by process name      |
+| `systemctl` | Manage services           |
+| `service`   | Legacy service management |
+
+💡 Key Learnings
+
+✅ Every running application is a process
+✅ ps aux displays all running processes
+✅ top monitors system resources live
+✅ kill stops unwanted processes
+✅ systemctl manages Linux services
+✅ Service management is critical in DevOps

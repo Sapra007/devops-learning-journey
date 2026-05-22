@@ -1,0 +1,178 @@
+👥 Day 06 — Linux Users & Groups Management
+
+User and permission management is a core responsibility in DevOps and System Administration.
+
+Today we will learn:
+
+👤 Creating users
+🔑 Managing passwords
+👥 Managing groups
+🛡️ Sudo access
+🔒 Security basics
+📌 Why Users & Groups Matter?
+
+Linux is a multi-user operating system.
+
+Users and groups help:
+
+🔐 Secure systems
+👥 Control access
+🛡️ Protect files
+⚙️ Manage permissions
+
+In DevOps, proper access management is critical for production servers.
+
+👤 1. useradd — Create New User
+📌 Definition
+
+Creates a new Linux user.
+
+🛠️ Syntax
+sudo useradd username
+✅ Example
+sudo useradd devops
+
+Creates user:
+
+devops
+🔍 Verify User
+cat /etc/passwd
+
+🔑 2. passwd — Set User Password
+📌 Definition
+
+Used to set or change user password.
+
+🛠️ Syntax
+sudo passwd username
+✅ Example
+sudo passwd devops
+
+System asks:
+
+Enter new UNIX password:
+
+👥 3. groupadd — Create Group
+📌 Definition
+
+Creates a new group.
+
+🛠️ Syntax
+sudo groupadd groupname
+✅ Example
+sudo groupadd developers
+
+👤➕👥 Add User to Group
+Command
+sudo usermod -aG groupname username
+✅ Example
+sudo usermod -aG developers devops
+
+🔍 Check User Groups
+Command
+groups username
+✅ Example
+groups devops
+
+Output:
+
+devops developers
+❌ 4. userdel — Delete User
+📌 Definition
+
+Deletes a Linux user.
+
+🛠️ Syntax
+sudo userdel username
+✅ Example
+sudo userdel devops
+
+🗑️ Delete User with Home Directory
+sudo userdel -r devops
+
+🛡️ 5. sudo — Super User Access
+📌 Definition
+
+sudo allows normal users to execute administrative commands.
+
+🛠️ Example
+sudo apt update
+🔥 Why Sudo is Important?
+
+Without sudo:
+❌ Users can accidentally damage the system.
+
+With sudo:
+✅ Only authorized users can perform admin tasks.
+
+👑 6. Switch User — su
+📌 Definition
+
+Switch from one user to another.
+
+🛠️ Syntax
+su username
+✅ Example
+su devops
+
+🔍 7. Check Current User
+Command
+whoami
+✅ Example Output
+ubuntu
+📂 Important User Files
+File	Purpose
+/etc/passwd	User information
+/etc/group	Group information
+/etc/shadow	Encrypted passwords
+
+🧪 Hands-On Practice
+
+Run these commands carefully:
+
+sudo useradd devops
+
+sudo passwd devops
+
+sudo groupadd developers
+
+sudo usermod -aG developers devops
+
+groups devops
+
+cat /etc/passwd
+
+🔥 Real DevOps Scenario
+Create Deployment User
+sudo useradd deploy
+Set Password
+sudo passwd deploy
+Give Sudo Access
+sudo usermod -aG sudo deploy
+🔍 Verify Sudo Group
+groups deploy
+
+Output:
+
+deploy sudo
+
+✅ User now has admin privileges.
+
+🎯 Important Commands Summary
+Command	Purpose
+useradd	Create user
+passwd	Set password
+groupadd	Create group
+usermod	Modify user
+groups	Show user groups
+userdel	Delete user
+sudo	Admin access
+su	Switch user
+
+💡 Key Learnings
+
+✅ Linux supports multiple users
+✅ Groups simplify permission management
+✅ sudo controls admin access
+✅ User management is critical for security
+✅ DevOps Engineers regularly manage users on servers
