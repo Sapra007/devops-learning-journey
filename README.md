@@ -1,4 +1,4 @@
-# DevOps Learning Journey 🚀
+# DevOps/Cloud Learning Journey 🚀
 
 This repository contains my hands-on DevOps learning notes and practical exercises.
 
