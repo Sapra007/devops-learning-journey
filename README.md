@@ -9,4 +9,4 @@ This repository contains my hands-on DevOps learning notes and practical exercis
   
 
 ## Goal
-Become a DevOps Engineer through practical learning.
+Become a DevOps/cloud Engineer through practical learning.
