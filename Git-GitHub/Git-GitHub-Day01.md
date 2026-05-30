@@ -134,7 +134,4 @@ git log
 
 ---
 
-## 📅 Next — Day 02
-- `git diff` — changes dekho commit se pehle
-- Multiple files commit karna
-- `.gitignore` — kaunsi files track na karein
+
