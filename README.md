@@ -1,5 +1,3 @@
-
-Hello All Students
 # 🚀 DevOps & Cloud Learning Journey
 
 > A structured, hands-on learning repository documenting my journey into DevOps and Cloud Engineering — from Linux fundamentals to Shell Scripting and Git workflows.
@@ -78,4 +76,3 @@ I believe in **learning by doing**. Instead of just watching tutorials, I docume
 ---
 
 ⭐ *If you find this helpful, feel free to star this repo!*
->>>>>>> ecbd2f8fd72ff71d0c09ab6b6f7f088d2b48394b
