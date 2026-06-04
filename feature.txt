@@ -1,4 +1,0 @@
-
-This is Local version
-This is a git version.
-this is my Temprery repo.
