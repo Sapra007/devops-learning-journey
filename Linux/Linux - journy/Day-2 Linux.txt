@@ -1,0 +1,126 @@
+🚀 Day 02 — Linux File Permissions & Ownership
+
+Understanding Linux permissions is one of the most important skills for every DevOps Engineer.
+
+📌 What are Linux Permissions?
+
+Linux is a multi-user operating system.
+Permissions control:
+
+👤 Who can access files
+✏️ Who can modify files
+▶️ Who can execute files
+
+Permissions improve:
+
+🔐 Security
+🛡️ Access control
+⚙️ System management
+📂 Types of Permissions
+
+Linux has 3 basic permissions:
+
+Symbol	Permission	Meaning
+r	Read	View file contents
+w	Write	Modify file
+x	Execute	Run file/program
+👥 Permission Categories
+
+Permissions are assigned to 3 groups:
+
+Category	Meaning
+👤 User (u)	File owner
+👥 Group (g)	Group users
+🌍 Others (o)	Everyone else
+🔍 Viewing File Permissions
+Command
+ls -l
+Example Output
+-rw-r--r-- 1 ubuntu ubuntu 0 May 21 notes.txt
+🧠 Understanding Permission Structure
+-rw-r--r--
+
+Breakdown:
+
+Part	Meaning
+-	File type
+rw-	User permissions
+r--	Group permissions
+r--	Others permissions
+📘 Permission Meaning
+Permission	Value
+r	4
+w	2
+x	1
+🔢 Numeric Permission Method
+Number	Permission
+7	rwx
+6	rw-
+5	r-x
+4	r--
+⚙️ chmod Command
+📌 Definition
+
+chmod changes file permissions.
+
+🛠️ Syntax
+chmod permissions filename
+✅ Example 1 — Give Full Permission
+chmod 777 notes.txt
+Meaning
+User	Group	Others
+rwx	rwx	rwx
+
+⚠️ Everyone gets full access.
+
+✅ Example 2 — Owner Full Access Only
+chmod 700 script.sh
+Meaning
+User	Group	Others
+rwx	---	---
+
+🔐 Only owner can access.
+
+✅ Example 3 — Common Secure Permission
+chmod 644 notes.txt
+Meaning
+User	Group	Others
+rw-	r--	r--
+
+📖 Owner can edit, others can only read.
+
+👑 chown Command
+📌 Definition
+
+chown changes file ownership.
+
+🛠️ Syntax
+chown username filename
+✅ Example
+chown ubuntu notes.txt
+
+Owner becomes ubuntu.
+
+👥 Change Group Ownership
+chown ubuntu:devops notes.txt
+🧑‍💻 whoami Command
+📌 Definition
+
+Displays current logged-in user.
+
+🛠️ Syntax
+whoami
+Example
+ubuntu
+🆔 id Command
+📌 Definition
+
+Displays:
+
+User ID
+Group ID
+Group membership
+🛠️ Syntax
+id
+Example
+uid=1000(ubuntu) gid=1000(ubuntu)

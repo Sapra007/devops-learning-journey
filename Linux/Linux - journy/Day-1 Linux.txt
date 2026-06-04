@@ -1,0 +1,152 @@
+Day 01 — Linux Fundamentals & Basic Commands
+
+Beginner-friendly Linux notes designed for DevOps learning and GitHub showcase.
+
+Introduction to Linux
+What is Linux?
+
+Linux is an open-source operating system based on Unix architecture.
+It is widely used in:
+
+Servers
+Cloud Computing
+DevOps
+Cybersecurity
+Containers and Kubernetes
+
+Most production servers run on Linux because it is:
+
+Stable
+Secure
+Fast
+Lightweight
+Highly customizable
+Linux Terminal
+What is a Terminal?
+
+A terminal is a command-line interface (CLI) that allows users to interact with the Linux operating system using commands.
+
+DevOps engineers primarily work with Linux through the terminal.
+
+Linux File System Basics
+
+Linux follows a hierarchical directory structure.
+
+Example:
+
+/
+├── home
+├── etc
+├── var
+├── bin
+├── usr
+└── tmp
+Important Directories
+Directory	Purpose
+/home	User files and folders
+/etc	Configuration files
+/var	Logs and variable data
+/bin	Essential system commands
+/tmp	Temporary files
+Basic Linux Commands
+1. pwd
+Definition
+
+pwd stands for Present Working Directory.
+
+It displays the current directory path.
+
+Syntax
+pwd
+Example
+$ pwd
+/home/ubuntu
+Use Case
+Used to identify your current location inside the Linux file system.
+
+2. ls
+Definition
+
+ls lists files and directories.
+
+Syntax
+ls
+Example
+$ ls
+Documents Downloads notes.txt
+Common Options
+Command	Description
+ls -l	Long listing format
+ls -a	Show hidden files
+ls -lh	Human-readable file sizes
+Example
+ls -l
+
+Output:
+
+drwxr-xr-x 2 ubuntu ubuntu 4096 May 21 projects
+3. cd
+Definition
+
+cd stands for Change Directory.
+
+Used to navigate between directories.
+
+Syntax
+cd directory_name
+Examples
+Move into a directory
+cd Downloads
+Move back one directory
+cd ..
+Go to home directory
+cd ~
+4. mkdir
+Definition
+
+mkdir stands for Make Directory.
+
+Used to create new directories.
+
+Syntax
+mkdir directory_name
+Example
+mkdir linux-notes
+Verify
+ls
+
+Output:
+
+linux-notes
+5. touch
+Definition
+
+touch creates empty files.
+
+Syntax
+touch filename
+Example
+touch notes.txt
+Verify
+ls
+
+Output:
+
+notes.txt
+6. clear
+Definition
+
+Clears the terminal screen.
+
+Syntax
+clear
+7. whoami
+Definition
+
+Displays the currently logged-in user.
+
+Syntax
+whoami
+Example
+$ whoami
+ubuntu

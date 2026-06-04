@@ -1,0 +1,194 @@
+🌐 Day 05 — Linux Networking Basics
+
+Networking is one of the most important skills in DevOps.
+Today we will learn how Linux systems communicate with servers, websites, and networks.
+
+📌 Why Networking Matters in DevOps?
+
+DevOps Engineers work with:
+
+☁️ Cloud servers
+🌐 APIs
+🐳 Docker containers
+☸️ Kubernetes clusters
+🔄 CI/CD pipelines
+
+To troubleshoot infrastructure, networking knowledge is essential.
+
+🌍 1. ping — Check Network Connectivity
+📌 Definition
+
+ping checks whether a server or website is reachable.
+
+It sends packets to the target system and waits for a response.
+
+🛠️ Syntax
+ping website_or_ip
+✅ Example
+ping google.com
+✅ Example Output
+64 bytes from google.com: icmp_seq=1 ttl=117 time=20 ms
+🔴 Stop Ping
+
+Press:
+
+CTRL + C
+
+🌐 2. ifconfig — Network Interface Information
+📌 Definition
+
+Displays:
+
+IP address
+Network interface details
+MAC address
+🛠️ Syntax
+ifconfig
+⚠️ Note
+
+Modern Linux systems may not have ifconfig installed by default.
+
+Install it using:
+
+sudo apt install net-tools
+
+🌐 3. ip — Modern Network Command
+📌 Definition
+
+ip is the modern replacement for ifconfig.
+
+Used for:
+
+Viewing IP addresses
+Network interfaces
+Routing information
+🛠️ Syntax
+ip a
+✅ Example Output
+inet 192.168.1.10/24
+
+🌍 4. hostname -I — Get System IP Address
+📌 Definition
+
+Displays system IP address.
+
+🛠️ Syntax
+hostname -I
+✅ Example Output
+192.168.1.10
+
+🔌 5. netstat — Network Statistics
+📌 Definition
+
+Displays:
+
+Open ports
+Active connections
+Listening services
+🛠️ Syntax
+netstat -tulnp
+📖 Option Meaning
+Option	Meaning
+-t	TCP connections
+-u	UDP connections
+-l	Listening ports
+-n	Numeric output
+-p	Process information
+✅ Example Output
+tcp   0   0 0.0.0.0:22   LISTEN
+
+📡 Port 22 is open for SSH.
+
+⚠️ Install netstat
+sudo apt install net-tools
+
+⚡ 6. ss — Socket Statistics
+📌 Definition
+
+Modern replacement for netstat.
+
+Faster and more efficient.
+
+🛠️ Syntax
+ss -tulnp
+
+🌐 7. curl — Transfer Data from URLs
+📌 Definition
+
+Used to:
+
+Access APIs
+Download webpage content
+Test endpoints
+
+Very important in DevOps.
+
+🛠️ Syntax
+curl URL
+✅ Example
+curl https://google.com
+🔥 Real DevOps Example
+
+Check public IP:
+
+curl ifconfig.me
+
+📥 8. wget — Download Files
+📌 Definition
+
+Downloads files directly from internet.
+
+🛠️ Syntax
+wget file_url
+✅ Example
+wget https://example.com/file.zip
+📂 Verify Download
+ls
+🧪 Hands-On Practice
+
+Run these commands:
+
+ping google.com
+
+ip a
+
+hostname -I
+
+ss -tulnp
+
+curl ifconfig.me
+
+🔥 Real DevOps Scenario
+Check if Nginx Server is Running
+ss -tulnp
+
+Look for:
+
+:80
+
+✅ Means web server is running.
+
+🌍 Test Website Response
+curl http://localhost
+📦 Download File from Internet
+wget https://example.com/sample.zip
+
+🎯 Important Commands Summary
+Command	Purpose
+ping	Check connectivity
+ifconfig	Network details
+ip a	Show IP address
+hostname -I	System IP
+netstat	Network statistics
+ss	Open ports
+curl	Access URLs/APIs
+wget	Download files
+
+💡 Key Learnings
+
+✅ Networking is critical in DevOps
+✅ ping checks server connectivity
+✅ ip a shows IP configuration
+✅ ss checks listening ports
+✅ curl is widely used for APIs
+✅ wget downloads files from internet

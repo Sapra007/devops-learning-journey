@@ -1,0 +1,189 @@
+🚀 Day 03 — Linux File Management Commands
+
+File management is a daily task in DevOps.
+Today we will learn how to create, copy, move, delete, and read files in Linux.
+
+📌 Why File Management is Important?
+
+DevOps Engineers regularly:
+
+📂 Manage configuration files
+📜 Read logs
+🛠️ Edit deployment scripts
+🧹 Remove unused files
+📦 Organize project directories
+📄 1. cp — Copy Files & Directories
+📌 Definition
+
+cp is used to copy files and directories.
+
+🛠️ Syntax
+cp source destination
+✅ Example 1 — Copy File
+cp notes.txt backup.txt
+
+📖 Creates a copy of notes.txt named backup.txt.
+
+✅ Example 2 — Copy Directory
+cp -r project backup-project
+
+📂 -r means recursive copy.
+
+🚚 2. mv — Move or Rename Files
+📌 Definition
+
+mv is used to:
+
+Move files/directories
+Rename files/directories
+🛠️ Syntax
+mv old_name new_name
+✅ Example 1 — Rename File
+mv notes.txt linux-notes.txt
+✅ Example 2 — Move File
+mv linux-notes.txt /home/ubuntu/Documents
+
+📂 Moves file to another directory.
+
+❌ 3. rm — Remove Files & Directories
+📌 Definition
+
+rm deletes files and directories.
+
+⚠️ Deleted files usually cannot be recovered.
+
+🛠️ Syntax
+rm filename
+✅ Example 1 — Delete File
+rm notes.txt
+✅ Example 2 — Delete Directory
+rm -r project
+
+📂 -r removes directory recursively.
+
+⚠️ Dangerous Command
+rm -rf
+Option	Meaning
+-r	Recursive delete
+-f	Force delete
+
+🚨 Use carefully in production servers.
+
+📖 4. cat — Display File Content
+📌 Definition
+
+cat displays file content inside terminal.
+
+🛠️ Syntax
+cat filename
+✅ Example
+cat notes.txt
+
+Output:
+
+Linux is important for DevOps.
+✍️ 5. nano — Terminal Text Editor
+📌 Definition
+
+nano is a simple command-line text editor.
+
+Used to:
+
+Edit configuration files
+Write scripts
+Modify logs
+🛠️ Syntax
+nano filename
+✅ Example
+nano notes.txt
+💾 Save & Exit in Nano
+Shortcut	Action
+CTRL + O	Save
+CTRL + X	Exit
+🔝 6. head — View Beginning of File
+📌 Definition
+
+Displays first 10 lines of a file.
+
+🛠️ Syntax
+head filename
+✅ Example
+head logs.txt
+🔻 7. tail — View End of File
+📌 Definition
+
+Displays last 10 lines of a file.
+
+Very useful for monitoring logs.
+
+🛠️ Syntax
+tail filename
+✅ Example
+tail logs.txt
+🔥 Real DevOps Command
+Live Log Monitoring
+tail -f application.log
+
+📡 Shows live log updates in real-time.
+
+Used heavily in:
+
+Kubernetes
+Docker
+Production servers
+
+🧪 Hands-On Practice
+
+Run these commands step-by-step:
+
+mkdir file-management
+cd file-management
+
+touch notes.txt
+nano notes.txt
+
+cat notes.txt
+
+cp notes.txt backup.txt
+
+mv backup.txt devops.txt
+
+ls -l
+
+rm devops.txt
+
+📂 Real DevOps Scenario
+Create Deployment Script
+touch deploy.sh
+Edit Script
+nano deploy.sh
+
+Add:
+
+echo "Deployment Started"
+Make Script Executable
+chmod +x deploy.sh
+Run Script
+./deploy.sh
+
+Output:
+
+Deployment Started
+🎯 Important Commands Summary
+Command	Purpose
+cp	Copy files/directories
+mv	Move or rename
+rm	Delete files
+cat	View file content
+nano	Edit files
+head	View first lines
+tail	View last lines
+
+💡 Key Learnings
+
+✅ Linux file management is essential for DevOps
+✅ cp creates backups
+✅ mv organizes files
+✅ rm deletes unwanted data
+✅ nano edits files directly from terminal
+✅ tail -f is important for live log monitoring
