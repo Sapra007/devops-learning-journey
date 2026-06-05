@@ -39,10 +39,10 @@ This repo is organized into topic-wise folders:
 
 ### ☁️ AWS Basics
 - S3 — Static Website Hosting & Bucket Policies
-- IAM — Users, Roles & Policies *(coming soon)*
-- EC2 — Virtual Server Launch *(coming soon)*
-- VPC — Networking Basics *(coming soon)*
-- CloudWatch — Monitoring & Alerts *(coming soon)*
+- IAM — Users, Roles & Policies 
+- EC2 — Virtual Server Launch 
+- VPC — Networking Basics 
+- CloudWatch — Monitoring & Alerts 
 
 > 🏆 **Project Completed:** Deployed a personal portfolio website on AWS S3  
 > 🔗 [Live Demo](http://anand-portfolio-2026.s3-website.ap-south-1.amazonaws.com)
