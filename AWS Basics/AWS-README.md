@@ -22,7 +22,8 @@ AWS Basics
 ├── S3 (Storage)          ✅ Day 01
 ├── IAM (Security)        ✅ Day 02
 ├── EC2 (Servers)         ✅ Day 03 & 04
-├── VPC (Networking)      🔜 Coming Soon
+├── VPC (Networking)      ✅ Day 05
+├── S3 + EC2 Project      ✅ Day 06
 └── CloudWatch (Monitor)  🔜 Coming Soon
 ```
 
@@ -36,8 +37,8 @@ AWS Basics
 | Day 02 | IAM — Users, Roles & Policies | ✅ Done | [AWS-Day02.md](./AWS-Day02.md) |
 | Day 03 | EC2 — Virtual Server Launch | ✅ Done | [AWS-Day03.md](./AWS-Day03.md) |
 | Day 04 | EC2 — Linux Server Connect (SSH) | ✅ Done | [AWS-Day04.md](./AWS-Day04.md) |
-| Day 05 | VPC — Networking Basics | 🔜 Coming | - |
-| Day 06 | S3 + EC2 — Project | 🔜 Coming | - |
+| Day 05 | VPC — Networking Basics | ✅ Done | [AWS-Day05.md](./AWS-Day05.md) |
+| Day 06 | S3 + EC2 — Integration Project | ✅ Done | [AWS-Day06.md](./AWS-Day06.md) |
 | Day 07 | CloudWatch — Monitoring & Alerts | 🔜 Coming | - |
 
 > Table ko main update karta rahunga jaise-jaise seekhta jaaunga! 📝
@@ -58,6 +59,17 @@ AWS Basics
 - **Instance ID:** i-0ce331eab83add2b0
 - **Seekha:** EC2 launch, SSH connect, Linux commands on cloud server
 
+### ✅ Project 3 — Custom VPC Network
+- **Kya banaya:** Apna private network AWS pe
+- **Technology:** VPC, Subnet, Internet Gateway, Route Table
+- **VPC CIDR:** 10.0.0.0/16
+- **Seekha:** VPC, subnet, IGW, route table configuration
+
+### ✅ Project 4 — S3 + EC2 Integration
+- **Kya banaya:** EC2 se S3 bucket access kiya AWS CLI se
+- **Technology:** EC2, S3, IAM Role, AWS CLI, SSH
+- **Seekha:** IAM Role, EC2 ko S3 access dena, aws s3 cp command
+
 ---
 
 ## 🛠️ AWS Services Covered
@@ -67,7 +79,8 @@ AWS Basics
 | ✅ S3 | Simple Storage Service | Files & website store karna |
 | ✅ IAM | Identity & Access Management | Security & permissions |
 | ✅ EC2 | Elastic Compute Cloud | Virtual servers |
-| 🔜 VPC | Virtual Private Cloud | Private network |
+| ✅ VPC | Virtual Private Cloud | Private network |
+| ✅ AWS CLI | Command Line Interface | Terminal se AWS control |
 | 🔜 CloudWatch | CloudWatch | Monitoring & alerts |
 
 ---
@@ -81,6 +94,7 @@ Yeh saari practice **FREE** mein ho rahi hai!
 | S3 Storage | 5 GB / month |
 | EC2 | 750 hours / month (t2.micro) |
 | Data Transfer | 100 GB / month |
+| VPC | Always Free |
 
 ---
 
