@@ -21,7 +21,7 @@ Yeh folder meri **AWS day-by-day learning** ka record hai.
 AWS Basics
 ├── S3 (Storage)          ✅ Day 01
 ├── IAM (Security)        ✅ Day 02
-├── EC2 (Servers)         🔜 Coming Soon
+├── EC2 (Servers)         ✅ Day 03 & 04
 ├── VPC (Networking)      🔜 Coming Soon
 └── CloudWatch (Monitor)  🔜 Coming Soon
 ```
@@ -34,8 +34,8 @@ AWS Basics
 |-----|-------|--------|------|
 | Day 01 | S3 — Static Website Hosting | ✅ Done | [AWS-Day01.md](./AWS-Day01.md) |
 | Day 02 | IAM — Users, Roles & Policies | ✅ Done | [AWS-Day02.md](./AWS-Day02.md) |
-| Day 03 | EC2 — Virtual Server Launch | 🔜 Coming | - |
-| Day 04 | EC2 — Linux Server Connect (SSH) | 🔜 Coming | - |
+| Day 03 | EC2 — Virtual Server Launch | ✅ Done | [AWS-Day03.md](./AWS-Day03.md) |
+| Day 04 | EC2 — Linux Server Connect (SSH) | ✅ Done | [AWS-Day04.md](./AWS-Day04.md) |
 | Day 05 | VPC — Networking Basics | 🔜 Coming | - |
 | Day 06 | S3 + EC2 — Project | 🔜 Coming | - |
 | Day 07 | CloudWatch — Monitoring & Alerts | 🔜 Coming | - |
@@ -52,6 +52,12 @@ AWS Basics
 - **Live URL:** http://anand-portfolio-2026.s3-website.ap-south-1.amazonaws.com
 - **Seekha:** S3 bucket, static hosting, bucket policy, public access
 
+### ✅ Project 2 — Live AWS Linux Server (EC2)
+- **Kya banaya:** Apna khud ka AWS Linux server
+- **Technology:** EC2 t2.micro, SSH, Key Pair, Security Group
+- **Instance ID:** i-0ce331eab83add2b0
+- **Seekha:** EC2 launch, SSH connect, Linux commands on cloud server
+
 ---
 
 ## 🛠️ AWS Services Covered
@@ -60,7 +66,7 @@ AWS Basics
 |---------|-----------|------|
 | ✅ S3 | Simple Storage Service | Files & website store karna |
 | ✅ IAM | Identity & Access Management | Security & permissions |
-| 🔜 EC2 | Elastic Compute Cloud | Virtual servers |
+| ✅ EC2 | Elastic Compute Cloud | Virtual servers |
 | 🔜 VPC | Virtual Private Cloud | Private network |
 | 🔜 CloudWatch | CloudWatch | Monitoring & alerts |
 
