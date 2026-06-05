@@ -1,6 +1,6 @@
 # 🚀 DevOps & Cloud Learning Journey
 
-> A structured, hands-on learning repository documenting my journey into DevOps and Cloud Engineering — from Linux fundamentals to Shell Scripting and Git workflows.
+> A structured, hands-on learning repository documenting my journey into DevOps and Cloud Engineering — from Linux fundamentals to Shell Scripting, Git workflows, and AWS Cloud.
 
 ---
 
@@ -37,6 +37,16 @@ This repo is organized into topic-wise folders:
 - Conflict resolution
 - Collaboration workflows
 
+### ☁️ AWS Basics
+- S3 — Static Website Hosting & Bucket Policies
+- IAM — Users, Roles & Policies *(coming soon)*
+- EC2 — Virtual Server Launch *(coming soon)*
+- VPC — Networking Basics *(coming soon)*
+- CloudWatch — Monitoring & Alerts *(coming soon)*
+
+> 🏆 **Project Completed:** Deployed a personal portfolio website on AWS S3  
+> 🔗 [Live Demo](http://anand-portfolio-2026.s3-website.ap-south-1.amazonaws.com)
+
 ---
 
 ## 🛠️ Tools & Technologies
@@ -54,8 +64,9 @@ This repo is organized into topic-wise folders:
 - [x] Linux Fundamentals
 - [x] Shell Scripting Basics
 - [x] Git & GitHub Workflows
+- [x] AWS Basics (S3 — Static Hosting Project ✅)
+- [ ] AWS Core Services (EC2, IAM, VPC, CloudWatch)
 - [ ] Docker & Containers
-- [ ] AWS Core Services (EC2, S3, IAM)
 - [ ] CI/CD Pipelines
 - [ ] Kubernetes Basics
 
