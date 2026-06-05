@@ -20,7 +20,7 @@ Yeh folder meri **AWS day-by-day learning** ka record hai.
 ```
 AWS Basics
 ├── S3 (Storage)          ✅ Day 01
-├── IAM (Security)        🔜 Coming Soon
+├── IAM (Security)        ✅ Day 02
 ├── EC2 (Servers)         🔜 Coming Soon
 ├── VPC (Networking)      🔜 Coming Soon
 └── CloudWatch (Monitor)  🔜 Coming Soon
@@ -33,7 +33,7 @@ AWS Basics
 | Day | Topic | Status | File |
 |-----|-------|--------|------|
 | Day 01 | S3 — Static Website Hosting | ✅ Done | [AWS-Day01.md](./AWS-Day01.md) |
-| Day 02 | IAM — Users, Roles & Policies | 🔜 Coming | - |
+| Day 02 | IAM — Users, Roles & Policies | ✅ Done | [AWS-Day02.md](./AWS-Day02.md) |
 | Day 03 | EC2 — Virtual Server Launch | 🔜 Coming | - |
 | Day 04 | EC2 — Linux Server Connect (SSH) | 🔜 Coming | - |
 | Day 05 | VPC — Networking Basics | 🔜 Coming | - |
@@ -90,10 +90,10 @@ Yeh saari practice **FREE** mein ho rahi hai!
 
 | Folder | Topic |
 |--------|-------|
+| [Linux](../Linux/) | Linux Fundamentals |
+| [Shell Scripting](../Shell%20Scripting/) | Bash Automation |
 | [Git-GitHub](../Git-GitHub/) | Version Control |
-| [AWS](../AWS/) | Cloud Computing ← You are here |
-| Linux | Coming Soon |
-| Docker | Coming Soon |
+| [AWS Basics](../AWS%20Basics/) | Cloud Computing ← You are here |
 
 ---
 
