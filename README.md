@@ -1,6 +1,6 @@
 # 🚀 DevOps & Cloud Learning Journey
 
-> A structured, hands-on learning repository documenting my journey into DevOps and Cloud Engineering — from Linux fundamentals to Shell Scripting, Git workflows, and AWS Cloud.
+> A structured, hands-on learning repository documenting my journey into DevOps and Cloud Engineering — from Linux fundamentals to Shell Scripting, Git workflows, AWS Cloud, and Docker!
 
 ---
 
@@ -37,15 +37,26 @@ This repo is organized into topic-wise folders:
 - Conflict resolution
 - Collaboration workflows
 
-### ☁️ AWS Basics
-- S3 — Static Website Hosting & Bucket Policies
-- IAM — Users, Roles & Policies 
-- EC2 — Virtual Server Launch 
-- VPC — Networking Basics 
-- CloudWatch — Monitoring & Alerts 
+### ☁️ AWS Basics ✅ Complete!
+- S3 — Static Website Hosting ✅
+- IAM — Users, Roles & Policies ✅
+- EC2 — Virtual Server Launch & SSH ✅
+- VPC — Networking Basics ✅
+- S3 + EC2 — Integration Project ✅
+- CloudWatch — Monitoring & Alerts ✅
 
-> 🏆 **Project Completed:** Deployed a personal portfolio website on AWS S3  
-> 🔗 [Live Demo](http://anand-portfolio-2026.s3-website.ap-south-1.amazonaws.com)
+> 🏆 **Projects Completed:**
+> - Portfolio website live on AWS S3
+> - EC2 Linux server launched & SSH connected
+> - Custom VPC network built
+> - S3 + EC2 integration via AWS CLI
+> - CloudWatch monitoring dashboard + email alerts
+
+### 🐳 Docker
+- Docker basics & installation *(coming soon)*
+- Images & Containers *(coming soon)*
+- Dockerfile *(coming soon)*
+- Docker Compose *(coming soon)*
 
 ---
 
@@ -56,6 +67,7 @@ This repo is organized into topic-wise folders:
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ---
 
@@ -64,8 +76,7 @@ This repo is organized into topic-wise folders:
 - [x] Linux Fundamentals
 - [x] Shell Scripting Basics
 - [x] Git & GitHub Workflows
-- [x] AWS Basics (S3 — Static Hosting Project ✅)
-- [ ] AWS Core Services (EC2, IAM, VPC, CloudWatch)
+- [x] AWS Basics (S3, IAM, EC2, VPC, CloudWatch ✅)
 - [ ] Docker & Containers
 - [ ] CI/CD Pipelines
 - [ ] Kubernetes Basics
