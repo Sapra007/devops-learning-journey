@@ -24,7 +24,7 @@ AWS Basics
 ├── EC2 (Servers)         ✅ Day 03 & 04
 ├── VPC (Networking)      ✅ Day 05
 ├── S3 + EC2 Project      ✅ Day 06
-└── CloudWatch (Monitor)  🔜 Coming Soon
+└── CloudWatch (Monitor)  ✅ Day 07
 ```
 
 ---
@@ -39,9 +39,9 @@ AWS Basics
 | Day 04 | EC2 — Linux Server Connect (SSH) | ✅ Done | [AWS-Day04.md](./AWS-Day04.md) |
 | Day 05 | VPC — Networking Basics | ✅ Done | [AWS-Day05.md](./AWS-Day05.md) |
 | Day 06 | S3 + EC2 — Integration Project | ✅ Done | [AWS-Day06.md](./AWS-Day06.md) |
-| Day 07 | CloudWatch — Monitoring & Alerts | 🔜 Coming | - |
+| Day 07 | CloudWatch — Monitoring & Alerts | ✅ Done | [AWS-Day07.md](./AWS-Day07.md) |
 
-> Table ko main update karta rahunga jaise-jaise seekhta jaaunga! 📝
+> AWS Basics module complete! 🎉
 
 ---
 
@@ -70,6 +70,12 @@ AWS Basics
 - **Technology:** EC2, S3, IAM Role, AWS CLI, SSH
 - **Seekha:** IAM Role, EC2 ko S3 access dena, aws s3 cp command
 
+### ✅ Project 5 — CloudWatch Monitoring Dashboard
+- **Kya banaya:** EC2 CPU monitoring dashboard + email alert
+- **Technology:** CloudWatch, SNS, Alarm
+- **Dashboard:** devops-dashboard
+- **Seekha:** Metrics, alarms, SNS notifications, monitoring
+
 ---
 
 ## 🛠️ AWS Services Covered
@@ -81,7 +87,8 @@ AWS Basics
 | ✅ EC2 | Elastic Compute Cloud | Virtual servers |
 | ✅ VPC | Virtual Private Cloud | Private network |
 | ✅ AWS CLI | Command Line Interface | Terminal se AWS control |
-| 🔜 CloudWatch | CloudWatch | Monitoring & alerts |
+| ✅ CloudWatch | CloudWatch | Monitoring & alerts |
+| ✅ SNS | Simple Notification Service | Email notifications |
 
 ---
 
@@ -95,6 +102,7 @@ Yeh saari practice **FREE** mein ho rahi hai!
 | EC2 | 750 hours / month (t2.micro) |
 | Data Transfer | 100 GB / month |
 | VPC | Always Free |
+| CloudWatch | 10 metrics, 10 alarms free |
 
 ---
 
